@@ -1,0 +1,342 @@
+ /* i took some help from the stackoverflow for aligning the h1 and navbar on the same line */
+
+
+ /* functionalites to add  */
+ /* 1) the plants card should flip on click and display the information and on hover it should scale . */
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: rgba(128, 128, 128, 0.395);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #1f1f1f;
+    border-radius: 5rem;
+}
+
+
+
+ body {
+    margin-top: 0px;
+     background-color: rgb(206, 253, 206);
+     font-family: 'Roboto Mono', monospace;
+     /* background-image: url(bg_plant.jpg); */
+     /* overflow-x: hidden; */
+     /* i kinda just fixed the bug temporarly extra space  */
+     /* the bug was getting caused because i was using relative positioning for the h1 , and 4 img tags  */
+     /* the relatively positioned elements occupy the original poisiton where they previously were . so thats why there was empty space below the background image  */
+
+ }
+
+ .header {
+     /* text-align: center; */
+    background-color: rgb(104, 218, 104);
+    border-radius: 20px;
+    height: 60px;
+    width: 97%;
+    padding: 10px;
+     /* i can also change the alpha to 0.6 in the background color to make it opaque */
+    position: fixed;
+    z-index: 100;
+ }
+
+ li {
+     list-style: none;
+     display: inline-block;
+     margin: 5px;
+     padding: 2px;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+
+ .navbar h1 {
+     font-size: 2.1rem;
+ }
+
+ ul a {
+     margin: 3px;
+     padding: 4px;
+     text-decoration: none;
+     position: relative;
+     bottom: 10px;
+     font-size: 1.3rem;
+ }
+
+ .li1:hover {
+     transform: scale(1.2);
+     /* background-color: azure; */
+     /* border-radius: 10px; */
+
+ }
+
+ .top:hover {
+     background-color: azure;
+     border-radius: 10px;
+ }
+
+
+
+
+ .backgroundimg {
+     border-radius: 30px;
+     margin: 60px;
+     height: 800px;
+     width: 1300px;
+     opacity: 0.7;
+
+ }
+
+
+
+ p {
+     font-size: 20px;
+ }
+
+ /* this css is for footer */
+ footer {
+     background-color: rgb(36, 35, 35);
+     height: 300px;
+     width: 93%;
+     border-radius: 20px;
+     padding: 50px;
+     /* opacity: ; */
+ }
+
+ footer a {
+     color: aliceblue;
+     margin: 10px;
+ }
+
+ footer div {
+     text-align: center;
+ }
+
+ #h1onimg {
+     /* display: inline-block; */
+     color: aliceblue;
+     font-size: 50px;
+     position: absolute;
+     top: 390px;
+     left: 380px;
+     z-index: 1;
+
+ }
+
+ /* position of each image on the main image */
+ #f0 {
+     position: absolute;
+     top: 680px;
+     left: 260px;
+     z-index: 1;
+
+ }
+
+ #f1 {
+     position: absolute;
+     top: 680px;
+     left: 520px;
+     z-index: 1;
+ }
+
+ #f2 {
+     position: absolute;
+     top: 680px;
+     left: 790px;
+     z-index: 1;
+ }
+
+ #f3 {
+     position: absolute;
+     top: 680px;
+     left: 1050px;
+     z-index: 1;
+ }
+
+ .all_imgs {
+     display: inline-block;
+ }
+
+ .all_imgs:hover {
+     transition-duration: 0.8s;
+     transform: scale(1.2);
+
+ }
+
+ .down:hover {
+     color: rgb(172, 172, 254);
+
+ }
+
+
+
+
+
+ #indor {
+     opacity: 0.8;
+     width: 1426px;
+     height: 420px;
+ }
+
+
+ /* plants  */
+
+ .heading1 {
+     text-align: center;
+     margin: 50px 0px;
+ }
+
+ #plants-cont {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     justify-content: space-evenly;
+ }
+
+ .box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     background-color: rgb(169, 253, 249);
+     border-radius: 15px;
+     margin: 28px 20px;
+     padding: 10px;
+     height: 500px;
+     width: 400px;
+     border: 2px solid black;
+
+ }
+
+ .box img {
+     position: relative;
+     bottom: 45px;
+     height: 510px;
+     width: 380px;
+     z-index: 2;
+
+     /* transition-property: visibility;
+    transition-delay: 2s; */
+     transition: opacity 0.5s ease-in-out 0.4s;
+ }
+
+ /* i can also do this using @keyframes animation and include the transition property inside it , but for now it is good */
+
+ .box h1 {
+     position: relative;
+     top: 10px;
+     z-index: 3;
+ }
+
+ .box:hover {
+     cursor: pointer;
+     transition-duration: 0.8s;
+     transform: scale(1.1);
+
+ }
+
+ /* trying to implement , that when we hover over the plant box , then the images should disappear after few seconds and the text benith it should show up */
+ .box img:hover {
+     opacity: 0;
+     /* visibility: hidden; */
+ }
+
+ #copy {
+     text-align: center;
+     color: aliceblue;
+     margin: 300px 20px;
+ }
+
+ .secret_message {
+     margin: 0;
+     position: absolute;
+     z-index: 1;
+     height: 400px;
+     width: 360px;
+     overflow: hidden;
+ }
+
+ /* trees container  */
+ .trees_container {
+     height: 2600px;
+     background-color: white;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ #t1,
+ #t2,
+ #t3,
+ #t4,
+ #fr1,
+ #fr2,
+ #fr3 {
+     margin: 20px 10px;
+     padding: 10px;
+     cursor: pointer;
+ }
+
+/* i can apply some properties here but for now , this does not seem to work properly */
+/* it is for the tree and fruit images  */
+ #t1:hover,
+ #t2:hover,
+ #t3:hover,
+ #t4:hover,
+ #fr1:hover,
+ #fr2:hover,
+ #fr3:hover{
+    
+ }
+
+
+ #shop_btn {
+     position: relative;
+     top: 10px;
+     color: white;
+     background-color: rgb(52, 52, 52);
+     font-size: 1.3rem;
+     margin: 5px;
+     padding: 10px 30px;
+     text-decoration: none;
+ }
+
+ #shop_btn:hover {
+     background-color: rgb(4, 160, 4);
+ }
+
+
+ /* fruits container */
+ .fruits_container {
+     height: 1000px;
+     background-color: white;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ #fruit_para {
+     font-size: 0.7rem;
+ }
+
+#quotes{
+    font-family: 'Playball', cursive;
+    font-size: 5rem;
+    text-align: center;
+}

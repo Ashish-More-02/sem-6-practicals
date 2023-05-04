@@ -1,0 +1,325 @@
+<!-- after building for some time i have dropped this idea now , i am moving forward , cause there is some bug that i can't figure out now , need to improve my knowledge further more! -->
+
+<!-- the position bug is fixed , it was due to using relative positioning -->
+
+<!-- after some time i again started to improve it , i think it will be my ultimate project , and i will learn so many things from it ! thats the motivation , i will continue to add many many different features to it -->
+
+<!--16/2/23 I think that this website will be my final project , looking at the different fearutes that i am adding  -->
+
+<!-- 1) add animation on scroll , like images appearing  on scroll .-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> plants for good </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="images/favi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!-- position all the images and try to make a good ui -->
+
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <h1>☘️ plants for good ☘️</h1> <br>
+            <ul class="menu">
+                <li class="li1"> <a class="top" href="#"> home</a></li>
+                <li class="li1"> <a class="top" href="#plants"> plants</a></li>
+                <li class="li1"> <a class="top" href="#trees"> trees</a></li>
+                <li class="li1"> <a class="top" href="#facts">facts</a></li>
+                <li class="li1"> <a class="top" href="#"> about us</a></li>
+            </ul>
+        </div>
+    </div>
+    <br> <br>
+    <img class="backgroundimg" src="images/new1.jpeg" alt="this is a image">
+
+    <h1 id="h1onimg">
+        "plants are everything"
+    </h1>
+    <img class="all_imgs" id="f0" src="images/img0.png" alt="">
+    <img class="all_imgs" id="f1" src="images/img1.png" alt="">
+    <img class="all_imgs" id="f2" src="images/img2.png" alt="">
+    <img class="all_imgs" id="f3" src="images/img3.png" alt="">
+
+    <!-- some images of plants  -->
+
+    
+
+    
+    <!-- plants container -->
+    <h1 class="heading1" id="plants">Plants </h1>
+    <span id="quotes">
+        A Beautiful plant is like having a friend in the house.
+    </span>
+    <div id="plants-cont">
+        <div class="box" id="box1">
+            <h1> pothos</h1> <img src="images/p1.png" alt="" id="plants-div-img" onclick="turn()">
+            <p class="secret_message"> The pothos plant is considered by many to be a great way to get started caring
+                for houseplants. Since pothos care is easy and undemanding, this lovely plant is an easy way to add some
+                green in your home </p>
+        </div>
+        <div class="box" id="box2">
+            <h1>lucky Bamboo</h1><img src="images/p2.png" alt="">
+            <p class="secret_message">
+                Dracaena sanderiana is a species of flowering plant in the family Asparagaceae, native to Central
+                Africa. It was named after the German-English gardener Henry Frederick Conrad Sander. The plant is
+                commonly marketed as "lucky bamboo".
+            </p>
+        </div>
+        <div class="box" id="box3">
+            <h1> Monstera</h1><img src="images/p3.png" alt="">
+            <p class="secret_message">
+                Monstera deliciosa, the Swiss cheese plant[2] or split-leaf philodendron[3] is a species of flowering
+                plant native to tropical forests of southern Mexico, south to Panama.[4] It has been introduced to many
+                tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the
+                Society Islands. It is very widely grown in temperate zones as a houseplant.
+            </p>
+        </div>
+        <div class="box" id="box4">
+            <h1>Spider-plant </h1><img src="images/p4.png" alt="">
+            <p class="secret_message">
+                Spider plant is a common name for several plants and may refer to: Chlorophytum comosum, the commonly
+                cultivated houseplant. Chlorophytum, a genus of plants in the Asparagus family. Saxifraga flagellaris,
+                also known as whiplash saxifrage. Cleome, a genus of flowering plants.
+            </p>
+        </div>
+        <div class="box" id="box5">
+            <h1>Jade plant</h1><img src="images/p5.png" alt="">
+            <p class="secret_message">
+                Crassula ovata, commonly known as jade plant, lucky plant, money plant or money tree, is a succulent
+                plant with small pink or white flowers that is native to the KwaZulu-Natal and Eastern Cape provinces of
+                South Africa, and Mozambique; it is common as a houseplant worldwide.[2] Much of its popularity stems
+                from the low levels of care needed; the jade plant requires little water and can survive in most indoor
+                conditions. It is sometimes referred to as the money tree; however, Pachira aquatica also has this
+                nickname
+            </p>
+        </div>
+        <div class="box" id="box6">
+            <h1> Areca palm</h1><img src="images/p6.png" alt="">
+            <p class="secret_message">
+                Areca palms have smooth, sometimes golden trunks that are reminiscent of bamboo clumps. Their fronds are
+                narrow and full, almost like bamboo leaves.they can be grown indors and outdors also. These palms are
+                also grown indoors as houseplants. They are best planted in the spring, and they have a slow to moderate
+                growth rate.
+            </p>
+        </div>
+        <p>Hover for one second to see its information</p>
+    </div>
+
+
+    <!-- trees container -->
+    <h1 class="heading1" id="trees">Trees</h1>
+    <div class="trees_container">
+
+        <div>
+            <!-- white tree  -->
+            <img id="t1" class="rimage__image fade-in lazyautosizes lazyloaded"
+                data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="0.6666666666666666" data-sizes="auto" alt=""
+                data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_180x.jpg?v=1646151378 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_220x.jpg?v=1646151378 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_300x.jpg?v=1646151378 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_360x.jpg?v=1646151378 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_460x.jpg?v=1646151378 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_540x.jpg?v=1646151378 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_720x.jpg?v=1646151378 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_900x.jpg?v=1646151378 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1080x.jpg?v=1646151378 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1296x.jpg?v=1646151378 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1512x.jpg?v=1646151378 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1728x.jpg?v=1646151378 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_2048x.jpg?v=1646151378 2048w"
+                sizes="665px"
+                srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_180x.jpg?v=1646151378 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_220x.jpg?v=1646151378 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_300x.jpg?v=1646151378 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_360x.jpg?v=1646151378 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_460x.jpg?v=1646151378 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_540x.jpg?v=1646151378 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_720x.jpg?v=1646151378 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_900x.jpg?v=1646151378 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1080x.jpg?v=1646151378 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1296x.jpg?v=1646151378 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1512x.jpg?v=1646151378 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_1728x.jpg?v=1646151378 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Dogwood_Homepage_b67113b4-d13a-44d6-856b-0a0e3e68ae6a_2048x.jpg?v=1646151378 2048w">
+            <h2>DOGWOOD TREES</h2>
+            <p>America's favorite flowering tree is back-in-stock! <br> Add this majestic ornamental to your yard this
+                spring.</p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+
+
+
+        <div>
+
+            <!-- pink tree-->
+            <img id="t2" class="rimage__image fade-in lazyautosizes lazyloaded"
+                data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="0.6666666666666666" data-sizes="auto" alt=""
+                data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_180x.jpg?v=1646152920 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_220x.jpg?v=1646152920 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_300x.jpg?v=1646152920 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_360x.jpg?v=1646152920 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_460x.jpg?v=1646152920 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_540x.jpg?v=1646152920 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_720x.jpg?v=1646152920 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_900x.jpg?v=1646152920 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1080x.jpg?v=1646152920 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1296x.jpg?v=1646152920 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1512x.jpg?v=1646152920 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1728x.jpg?v=1646152920 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_2048x.jpg?v=1646152920 2048w"
+                sizes="665px"
+                srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_180x.jpg?v=1646152920 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_220x.jpg?v=1646152920 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_300x.jpg?v=1646152920 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_360x.jpg?v=1646152920 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_460x.jpg?v=1646152920 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_540x.jpg?v=1646152920 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_720x.jpg?v=1646152920 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_900x.jpg?v=1646152920 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1080x.jpg?v=1646152920 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1296x.jpg?v=1646152920 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1512x.jpg?v=1646152920 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_1728x.jpg?v=1646152920 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Crabapple_Homepage_2048x.jpg?v=1646152920 2048w">
+            <h2>CRABAPPLE TREES</h2>
+            <p>Known as the Jewels of the Landscape crabapples <br> bring seasonal delight to your garden</p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+
+
+
+
+        <div>
+
+            <!--white tree-2-->
+            <img id="t3" class="rimage__image fade-in lazyautosizes lazyloaded"
+                data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="0.6666666666666666" data-sizes="auto" alt=""
+                data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_180x.jpg?v=1646152481 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_220x.jpg?v=1646152481 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_300x.jpg?v=1646152481 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_360x.jpg?v=1646152481 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_460x.jpg?v=1646152481 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_540x.jpg?v=1646152481 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_720x.jpg?v=1646152481 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_900x.jpg?v=1646152481 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1080x.jpg?v=1646152481 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1296x.jpg?v=1646152481 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1512x.jpg?v=1646152481 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1728x.jpg?v=1646152481 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_2048x.jpg?v=1646152481 2048w"
+                sizes="665px"
+                srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_180x.jpg?v=1646152481 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_220x.jpg?v=1646152481 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_300x.jpg?v=1646152481 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_360x.jpg?v=1646152481 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_460x.jpg?v=1646152481 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_540x.jpg?v=1646152481 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_720x.jpg?v=1646152481 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_900x.jpg?v=1646152481 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1080x.jpg?v=1646152481 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1296x.jpg?v=1646152481 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1512x.jpg?v=1646152481 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_1728x.jpg?v=1646152481 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Yoshino_Cherry_Homepage_2048x.jpg?v=1646152481 2048w">
+            <h2>FLOWERING CHERRY TREES</h2>
+            <p>Nothings says spring quite like it With showy flowers<br>and a faint scent it will bring delight to your
+                garden.</p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+
+
+
+        <div>
+
+            <!-- pink tree-2 -->
+            <img id="t4" class="rimage__image fade-in lazyautosizes lazyloaded"
+                data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="0.6666666666666666" data-sizes="auto" alt=""
+                data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_180x.jpg?v=1646151823 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_220x.jpg?v=1646151823 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_300x.jpg?v=1646151823 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_360x.jpg?v=1646151823 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_460x.jpg?v=1646151823 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_540x.jpg?v=1646151823 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_720x.jpg?v=1646151823 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_900x.jpg?v=1646151823 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1080x.jpg?v=1646151823 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1296x.jpg?v=1646151823 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1512x.jpg?v=1646151823 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1728x.jpg?v=1646151823 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_2048x.jpg?v=1646151823 2048w"
+                sizes="665px"
+                srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_180x.jpg?v=1646151823 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_220x.jpg?v=1646151823 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_300x.jpg?v=1646151823 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_360x.jpg?v=1646151823 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_460x.jpg?v=1646151823 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_540x.jpg?v=1646151823 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_720x.jpg?v=1646151823 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_900x.jpg?v=1646151823 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1080x.jpg?v=1646151823 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1296x.jpg?v=1646151823 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1512x.jpg?v=1646151823 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_1728x.jpg?v=1646151823 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Redbud_Homepage_2048x.jpg?v=1646151823 2048w">
+            <h2>REDBUD TREES</h2>
+            <p> With heart-shaped leaves and gorgeous pink blossoms,<br> the redbud will be a hit anywhere you plant it.
+            </p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+
+    </div>
+    <br> <br> <br>
+
+    <div class="fruits_container">
+
+        <div>
+            <!-- persimmon tree -->
+            <img id="fr1" class="rimage__image fade-in lazyautosizes lazyloaded" data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="0.6666666666666666" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_180x.jpg?v=1632254729 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_220x.jpg?v=1632254729 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_300x.jpg?v=1632254729 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_360x.jpg?v=1632254729 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_460x.jpg?v=1632254729 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_540x.jpg?v=1632254729 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_720x.jpg?v=1632254729 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_900x.jpg?v=1632254729 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1080x.jpg?v=1632254729 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1296x.jpg?v=1632254729 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1512x.jpg?v=1632254729 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1728x.jpg?v=1632254729 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_2048x.jpg?v=1632254729 2048w" sizes="400px" srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_180x.jpg?v=1632254729 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_220x.jpg?v=1632254729 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_300x.jpg?v=1632254729 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_360x.jpg?v=1632254729 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_460x.jpg?v=1632254729 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_540x.jpg?v=1632254729 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_720x.jpg?v=1632254729 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_900x.jpg?v=1632254729 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1080x.jpg?v=1632254729 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1296x.jpg?v=1632254729 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1512x.jpg?v=1632254729 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_1728x.jpg?v=1632254729 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Persimmon_Collection_Homepage_2048x.jpg?v=1632254729 2048w">
+            <h2>Persimmon TREE</h2>
+            <p id="fruit_para">
+                Looking for a unique yet highly coveted fruit tree to plant in your <br> yard? Try a persimmon tree. Persimmon trees are beautiful<br> backyard additions with bonus points for delicious fruit
+            </p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+        <div>
+            <!-- apple tree -->
+            <img id="fr2" class="rimage__image fade-in lazyautosizes lazyloaded" data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="0.6666666666666666" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_180x.jpg?v=1666125678 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_220x.jpg?v=1666125678 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_300x.jpg?v=1666125678 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_360x.jpg?v=1666125678 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_460x.jpg?v=1666125678 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_540x.jpg?v=1666125678 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_720x.jpg?v=1666125678 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_900x.jpg?v=1666125678 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1080x.jpg?v=1666125678 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1296x.jpg?v=1666125678 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1512x.jpg?v=1666125678 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1728x.jpg?v=1666125678 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_2048x.jpg?v=1666125678 2048w" sizes="400px" srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_180x.jpg?v=1666125678 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_220x.jpg?v=1666125678 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_300x.jpg?v=1666125678 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_360x.jpg?v=1666125678 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_460x.jpg?v=1666125678 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_540x.jpg?v=1666125678 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_720x.jpg?v=1666125678 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_900x.jpg?v=1666125678 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1080x.jpg?v=1666125678 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1296x.jpg?v=1666125678 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1512x.jpg?v=1666125678 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_1728x.jpg?v=1666125678 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Apple_Header_50232d33-255d-4c81-a1c3-8a37e16f463d_2048x.jpg?v=1666125678 2048w">
+            <h2>APPLE TREE</h2>
+            <P id="fruit_para">Fall means apple harvest time! Apple trees are one of the most <br>widely cultivated fruit trees in the world. Apple trees require a <br>cross-pollinator and a certain amount of chill hours to produce fruit.</P>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+
+        <div>
+            <!-- fig tree -->
+            <img id="fr3" class="rimage__image fade-in lazyautosizes lazyloaded" data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="0.6666666666666666" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_180x.jpg?v=1666126057 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_220x.jpg?v=1666126057 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_300x.jpg?v=1666126057 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_360x.jpg?v=1666126057 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_460x.jpg?v=1666126057 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_540x.jpg?v=1666126057 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_720x.jpg?v=1666126057 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_900x.jpg?v=1666126057 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1080x.jpg?v=1666126057 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1296x.jpg?v=1666126057 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1512x.jpg?v=1666126057 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1728x.jpg?v=1666126057 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_2048x.jpg?v=1666126057 2048w" sizes="400px" srcset="//cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_180x.jpg?v=1666126057 180w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_220x.jpg?v=1666126057 220w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_300x.jpg?v=1666126057 300w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_360x.jpg?v=1666126057 360w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_460x.jpg?v=1666126057 460w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_540x.jpg?v=1666126057 540w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_720x.jpg?v=1666126057 720w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_900x.jpg?v=1666126057 900w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1080x.jpg?v=1666126057 1080w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1296x.jpg?v=1666126057 1296w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1512x.jpg?v=1666126057 1512w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_1728x.jpg?v=1666126057 1728w, //cdn.shopify.com/s/files/1/0158/9452/files/Fig_Header_2048x.jpg?v=1666126057 2048w">
+            <h2> FIG TREE</h2> 
+            <p id="fruit_para">Figs are fun and fairly easy to grow. The fruit is a good source of <br>both calcium and potassium. Fun Fact: Fig trees have no blossoms on <br>their branches. The blossom is inside of the fruit!</p>
+            <a id="shop_btn" class="text-column__button btn btn--primary" href="">SHOP</a>
+        </div>
+    </div>
+
+
+    <!-- background image of indor plants -->
+    <div class="images">
+        <h1 class="heading1"> These are some frinedly plants. </h1>
+        <img id="indor" src="images/indor-plants.png" alt="this is image of an indor plant ">
+        
+    </div>
+
+    <h1 class="heading1" id="facts">
+        Some intresting facts about plants.
+    </h1>
+    <!-- add some more facts about plants -->
+    <!-- facts container -->
+    <div>
+        <p>
+            1) 80 PERCENT OF THE EARTH'S ORIGINAL FORESTS HAVE BEEN CLEARED OR DESTROYED.
+            The same forests that dominated the land 8,000 years ago are all but gone. Approximately four-fifths of the
+            forests are gone thanks to human intervention,
+        </p>
+        <p>
+            2) NUTRITION DOESN'T FACTOR INTO THE CROPS WE DO MASS PRODUCE.
+            The world's largest farmers have pursued certain crops because they can grow a lot of them more quickly, easily
+            and inexpensively to turn a better profit.
+    
+            As a result, most of the most healthful plants stay off of our dinner plates because they aren't available at
+            grocery stores.
+        </p>
+        <p>
+            3) THE EARTH HAS MORE THAN 80,000 SPECIES OF EDIBLE PLANTS.
+            If you're ever in the mood to try something new, the good news is that there is certainly food you haven't
+            tasted yet growing somewhere in the world
+        </p>
+        <p>
+            4) The world's tallest tree is the coast redwood (Sequoia sempervirens), which grows along the Pacific Coast of
+            the United States, mainly in California. Interestingly enough, it's not the world's oldest growing tree; that
+            award goes to a bristlecone pine (Pinus aristata).
+        </p>
+        <p>
+            5) Bamboo is the fastest growing woody plant in the world. It can grow up to 35 inches in a single day
+        </p>
+        <p>
+            6) Tomato juice is the official state beverage of Ohio, honoring the part A. W. Livingston of Reynoldsburg,
+            Ohio, played in popularizing the tomato in the late 1800s.
+        </p>
+        <p>
+            7) From a botanical standpoint, avocados and pumpkins are fruits, not vegetables, because they bear the plants'
+            seeds. Rhubarb, on the other hand, is a vegetable.
+        </p>
+        <p>
+            8) Saffron, used as a flavoring in Mediterranean cooking, is harvested from the stigmas of a type of
+            fall-blooming crocus, Crocus sativus.
+        </p>
+        <p>
+            9) Small pockets of air inside cranberries cause them to bounce and float in water.
+        </p>
+        <p>
+            10) The flower of the titan arum (Amorphophallus titanium) is the largest unbranched flower in the world and can
+            reach up to 15 feet tall. The bloom produces an odor similar to rotting meat, hence the common name 'corpse
+            flower.' A similar odor comes from Rafflesia, another plant that hails from the rainforests of Sumatra. Both
+            developed their scent to attract pollinating flies; they don't compete with other blooms for butterflies and
+            hummingbirds.
+        </p>
+
+    </div>
+
+    <footer>
+        <div>
+            <a class="down" href="https://www.google.com/" target="_blank">google</a>
+            <a class="down" href="https://www.youtube.com/" target="_blank">youtube</a>
+            <a class="down" href="#">facebook </a>
+            <a class="down" href="#">github</a>
+
+        </div>
+
+        <div id="copy">
+            copyright &copy; www.plantsforgood.com. 2023 All rights reserved.
+        </div>
+        
+    </footer>
+
+    
+    <!-- the funtion which i wanted to build is build and working perfectly,but it only runs once, and i want to run it for infinite time -->
+    <!-- I am not clear with all the javascript concepts right now thats why , it is a bit difficult for me now ! -->
+    <!-- <script>
+
+        function turn(){
+            let opacity =document.getElementById('plants-div-img').style.opacity=0;
+            // return opacity;
+            document.getElementById('plants-div-img').addEventListener("click",turn2);
+            function turn2(){
+                let opa1 =document.getElementById('plants-div-img').style.opacity=1;
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
