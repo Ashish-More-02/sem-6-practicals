@@ -1,0 +1,121 @@
+body {
+    margin-top: 0px;
+    background-color: rgb(206, 253, 206);
+    font-family: 'Roboto Mono', monospace;
+    /* background-image: url(bg_plant.jpg); */
+    /* overflow-x: hidden; */
+    /* i kinda just fixed the bug temporarly extra space  */
+    /* the bug was getting caused because i was using relative positioning for the h1 , and 4 img tags  */
+    /* the relatively positioned elements occupy the original poisiton where they previously were . so thats why there was empty space below the background image  */
+
+}
+
+.header {
+    /* text-align: center; */
+    background-color: rgb(104, 218, 104);
+    border-radius: 20px;
+    height: 60px;
+    width: 97%;
+    padding: 10px;
+    /* i can also change the alpha to 0.6 in the background color to make it opaque */
+    position: fixed;
+    z-index: 100;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar h1 {
+    font-size: 2.1rem;
+}
+
+ul a {
+    margin: 3px;
+    padding: 4px;
+    text-decoration: none;
+    position: relative;
+    bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.li1:hover {
+    transform: scale(1.2);
+    /* background-color: azure; */
+    /* border-radius: 10px; */
+
+}
+
+.top:hover {
+    background-color: azure;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(36, 35, 35);
+    height: 300px;
+    width: 93%;
+    border-radius: 20px;
+    padding: 50px;
+    /* opacity: ; */
+}
+
+footer a {
+    color: aliceblue;
+    margin: 10px;
+}
+
+footer div {
+    text-align: center;
+}
+
+#copy {
+    text-align: center;
+    color: aliceblue;
+    margin: 300px 20px;
+}
+
+
+/* for dogwood tree , tree1 */
+
+#tree1 {
+    /* position: relative; */
+    top: 50px;
+    height: 30%;
+    width: 30%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.t1 div {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    height: 640px;
+    width: 900px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.b1 {
+    font-size: 2.1rem;
+    position: relative;
+    top: 100px;
+    left :380px;
+
+}

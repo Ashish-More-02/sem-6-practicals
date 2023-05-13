@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buying form </title>
+    <style>
+        body {
+            background-color: rgb(177, 216, 250);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.1rem;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid black;
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+            font-size: 2rem;
+            background-color: rgb(197, 249, 204);
+        }
+
+        #b1 {
+            position: relative;
+            font-size: 2rem;
+            left: 50px;
+            top: 20px;
+        }
+
+        #b2 {
+            font-size: 2rem;
+            position: relative;
+            right: 50px;
+            top: 20px;
+        }
+
+        #cont {
+            display: flex;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Enter your details </h1>
+    <hr>
+
+    <form>
+
+        <div id="container">
+            <div class="in">
+                name : <input type="text" placeholder="enter your name ">
+                <br> <br>
+            </div>
+
+            <div class="in">
+                Phone Number : <input type="number" placeholder="enter phone number">
+                <br> <br>
+            </div>
+
+
+            <div class="in">
+                address in short : <input type="text" placeholder="enter your address">
+                <br> <br>
+            </div>
+
+
+            <div class="in">
+                select payment method: <select name="pay" id="p1">
+                    <option>cash on delivery</option>
+                    <option>net banking </option>
+                    <option>credit card</option>
+                    <option>upi id /upi apps</option>
+                </select>
+            </div>
+
+            <div id="cont">
+                <input id="b2" type="reset" value="clear">
+                <input id="b1" type="submit" value="submit">
+            </div>
+
+        </div>
+
+    </form>
+
+    <script>
+        let var1 = document.getElementById("b1");
+        var1.addEventListener("click", myfunction);
+
+
+        function myfunction() {
+            document.write("Thank you for placing your order , your order will be delivered soon! ");
+        }
+    </script>
+</body>
+
+</html>
